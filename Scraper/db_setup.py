@@ -1,7 +1,7 @@
 import sqlite3
 
 # Connect to database (creates it if it doesn't exist)
-conn = sqlite3.connect('././data/reviews.db')
+conn = sqlite3.connect('././Data/reviews.db')
 cursor = conn.cursor()
 
 # Create reviews table
@@ -13,7 +13,8 @@ cursor.execute('''
         review_text TEXT,
         rating INTEGER,
         review_date TEXT,
-        verified TEXT
+        verified TEXT,
+        UNIQUE(product_name, review_text, review_date)
     )
 ''')
 
