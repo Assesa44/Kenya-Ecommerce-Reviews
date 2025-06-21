@@ -83,7 +83,7 @@ for product in product_urls:
     all_reviews.extend(reviews)
 
 # Save to CSV
-csv_file = "././Data/jumia_reviews.csv"
+csv_file = "././Data/Raw/jumia_reviews.csv"
 with open(csv_file, mode="w", newline="", encoding="utf-8") as file:
     writer = csv.DictWriter(file, fieldnames=["product_name", "category", "review_title", "review_text", "rating", "review_date", "verified"])
     writer.writeheader()
