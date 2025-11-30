@@ -76,3 +76,9 @@ Kenya-Ecommerce-Reviews/
 │   └── ecommerce_insights_deck.pptx
 │
 └── README.md
+
+---
+
+## Author
+
+**By Vanessa Sandra Assesa**
