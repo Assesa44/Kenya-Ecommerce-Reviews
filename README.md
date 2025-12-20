@@ -2,25 +2,27 @@
 
 ![mark-konig-Tl8mDaue_II-unsplash](https://github.com/user-attachments/assets/5ab2e42c-af9c-472d-8e68-b5bd9ee7d024)
 
-### 🔍 Investigating customer sentiment to expose the gap between ratings and real experience on Jumia Kenya
+### 🔍 Investigating Customer Sentiment vs Star Ratings on Jumia Kenya
 
-## 📖 Overview
+## 📖 Project Overview
 
-In this project, I set out to analyze customer reviews from Jumia Kenya using Natural Language Processing (NLP). My original goal was to detect possible manipulation in product ratings, such as fake reviews, and uncover whether sellers were benefiting from inflated visibility at the expense of honest vendors.
+This project analyzes customer reviews from Jumia Kenya using Natural Language Processing (NLP) to examine the relationship between numerical star ratings and written customer sentiment.
 
-While the analysis revealed that the majority of reviews were verified and positive, the deeper insights came from mismatches between what customers rated and what they actually said. This project offers a practical way to understand product satisfaction, trustworthiness, and seller credibility on Kenyan e-commerce platforms.
+The original motivation was to explore whether inflated ratings or misleading reviews could distort product visibility and seller credibility. While most reviews were verified and generally positive, the analysis revealed a more nuanced insight: ratings and written sentiment do not always align, especially for mid-range (3-star) reviews.
+
+The project demonstrates how text analytics can uncover gaps between surface-level metrics and actual customer experience, a key concern for e-commerce platforms, sellers, and consumers alike.
 
 ---
 
 ## 🎯 Objectives
 
 - Scrape real customer reviews from Jumia Kenya
-- Clean and prepare the dataset for analysis
-- Use TextBlob and VADER to perform sentiment analysis on review text
+- Clean and preprocess unstructured text data
+- Perform sentiment analysis using TextBlob and VADER
 - Compare star ratings to text-based sentiment labels
-- Visualize trends across product categories
 - Identify mismatches between numerical ratings and review tone
-- Build interactive dashboards in Power BI for deeper exploration
+- Analyze trends across product categories
+- Build an interactive Power BI dashboard for exploratory analysis
 
 ---
 
@@ -30,17 +32,17 @@ While the analysis revealed that the majority of reviews were verified and posit
 - *BeautifulSoup & Requests*: Web scraping  
 - *Pandas & Matplotlib*: Data manipulation and visualization  
 - *TextBlob & VADER*: Sentiment polarity scoring
-- *Power BI*: Dashboard development  
-- *Jupyter Notebook*: Documentation and storytelling  
+- *Power BI*: Interactive dashboard development  
+- *Jupyter Notebook*: Analysis and documentation  
 
 ---
 
 ## 🧪 Key Insights
 
 - 🤖 All reviews were from *verified purchases*, boosting credibility
-- 📉 Some reviews showed mismatches — products with high ratings but negative review text, and vice versa
+- 📉 Some reviews showed mismatches, products with high ratings but negative review text, and vice versa
 - 🎯 Most mismatches were subtle: e.g. “It’s okay” given a 5-star rating
-- 📊 Fashion and appliance categories were the most reviewed
+- 📊 Fashion and home appliance were the most reviewed categories
 
 ---
 
@@ -73,9 +75,11 @@ Kenya-Ecommerce-Reviews/
 │   └── Kenya_Ecommerce_Reviews_Dashboard.pbix
 │
 ├── Presentation/
-│   └── ecommerce_insights_deck.pptx
+│  └── ecommerce_insights_deck.pptx
 │
-└── README.md
+├── README.md
+│
+└── Requirements.txt
 
 ---
 
